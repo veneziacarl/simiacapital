@@ -1,2 +1,2 @@
-# Simiacapital
+# SimiaCapital
 Your app description, here.
