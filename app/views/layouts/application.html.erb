@@ -1,14 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Simiacapital</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<%= yield %>
+    <title>Simia Capital</title>
 
-</body>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <div data-sticky-container>
+      <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+        <div class="top-bar-title">
+          <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+            <span class="menu-icon dark" data-toggle></span>
+          </span>
+          <strong>Simia Capital</strong>
+        </div>
+        <div id="responsive-menu">
+          <div class="top-bar-left">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%= yield %>
+
+  </body>
 </html>

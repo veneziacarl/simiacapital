@@ -1,0 +1,67 @@
+#home {
+  background: url(page1-background.jpg) 50% 0 repeat fixed; min-height: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+
+  article {
+    height: 458px;
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    width: 100%;
+  }
+}
+
+#about {
+  background: url(Depositphotos_5239031_l-2015.jpg) 50% 0 repeat fixed; min-height: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+
+  article {
+    height: 458px;
+    position: absolute; 
+    text-align: center;
+    top: 150px;
+    width: 100%;
+  }
+}
+
+#page3 {
+  height: 1000px;
+}
+
+.top-bar {
+  background-color: #E9E9E9;
+  border-radius: 2px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  font-family: Roboto, sans-serif;
+  height: 50px;
+
+  ul {
+    background-color: inherit;
+  }
+
+  .top-bar-left {
+    float: left;
+    margin-left: 50px;
+    padding-top: 7px;
+    li {
+      display: inline;
+      list-style: none;
+      margin-left: 20px;
+    }
+  }
+
+  .top-bar-title {
+    float: left;
+    padding-top: 7px;
+  }
+}
