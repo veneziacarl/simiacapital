@@ -13,6 +13,13 @@
   </head>
 
   <body>
+    <% unless flash.empty? %>
+      <div class="flash">
+        <% flash.each do |type, message| %>
+        <%= message %>
+        <% end %>
+      </div>
+    <% end %>
 
     <nav class="white" role="navigation">
       <div class="nav-wrapper container">
