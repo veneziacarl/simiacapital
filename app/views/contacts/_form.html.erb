@@ -1,0 +1,18 @@
+<div align="center">
+  <h3>Send A message to Us</h3>
+
+  <%= form_for @contact, class: 'form-horizontal' do |f| %>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name, required: true %>
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+    <%= f.label :message %>
+    <%= f.text_field :message, as: :text, required: true %>
+    <div>
+      </br>
+      <%= f.submit %>
+    </div>
+  <% end %>
+</div>

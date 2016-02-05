@@ -1,5 +1,13 @@
+$gray: #eaeaea;
+$light-blue: #c0d6df;
+$blue-gray: #4f6d7a;
+$tan: #e8dab2;
+$orange: #dd6e42;
+$white: #ffffff;
+
 #home {
-  background: url(page1-background.jpg) 50% 0 repeat fixed; min-height: 1000px;
+  background: url(Depositphotos_5239031_l-2015.jpg) 50% 0 repeat fixed; height: 500px;
+  background-position: top;
   height: 1000px;
   margin: 0 auto;
   width: 100%;
@@ -10,13 +18,21 @@
     height: 458px;
     position: absolute;
     text-align: center;
-    top: 150px;
+    top: 200px;
     width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    h1 {
+      font-family: 'Kaushan Script', cursive;
+      color: $gray;
+    }
+    h2 {
+      color: $gray;
+    }
   }
 }
 
 #about {
-  background: url(Depositphotos_5239031_l-2015.jpg) 50% 0 repeat fixed; min-height: 1000px;
+  background: url(page1-background.jpg) 50% 0 repeat fixed; min-height: 1000px;
   height: 1000px;
   margin: 0 auto;
   width: 100%;
@@ -43,8 +59,12 @@
   font-size: 30px;
 }
 
+.box {
+  max-width: 300px;
+}
+
 .top-bar {
-  background-color: #FFFFFF;
+  background-color: $white;
   border-radius: 2px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
   font-family: Roboto, sans-serif;
