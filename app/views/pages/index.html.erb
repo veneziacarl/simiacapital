@@ -1,34 +1,105 @@
-<section id="home" data-type="background" data-speed="10" class="pages">
-  <a id="about" class="smooth"></a>
-  <article>
-    <h1>Simia Capital</h1>
-    <h2>PIONEERS IN THE FUTURE OF AGRICULTURE</h2>
-    <div class="box callout secondary medium-4 columns">
-      <h5>This is a secondary panel</h5>
-      <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <a href="#">It's dangerous to go alone, take this.</a>
+  <div id="index-banner" class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h1 class="header center brown-text text-darken-4">Pioneers in the Future of Agriculture</h1>
+        </div>
+      </div>
     </div>
-    <div class="box callout secondary medium-4 columns">
-      <h5>This is a secondary panel</h5>
-      <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <a href="#">It's dangerous to go alone, take this.</a>
-    </div>
-    <div class="box callout secondary medium-4 columns">
-      <h5>This is a secondary panel</h5>
-      <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <a href="#">It's dangerous to go alone, take this.</a>
-    </div>
-  </article>
-</section>
+    <div class="parallax"><%= image_tag 'Depositphotos_5239031_l-2015.jpg' %></div>
+  </div>
 
-<section id="about" data-type="background" data-speed="10" class="pages">
-  <a id="portfolio" class="smooth"></a>
-  <article>Simple Parallax Scroll</article>
-</section>
 
-<section id="contact" data-type="background" data-speed="10" class="pages">
-  <a id="contact" class="smooth"></a>
-  <article>
-    <%= render 'contacts/form' %>
-  </article>
-</section>
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center amber-text text-darken-2"><i class="material-icons">input</i></h2>
+            <h5 class="center">Initiate</h5>
+
+            <p class="light">We create our own companies to target opportunities that we would like to take a major stance in.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center amber-text text-darken-2"><i class="material-icons">my_location</i></h2>
+            <h5 class="center">Invest</h5>
+
+            <p class="light">Providing seed through late-stage investment, we aim to make a large impact by enabling others to do well.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center amber-text text-darken-2"><i class="material-icons">invert_colors</i></h2>
+            <h5 class="center">Grow</h5>
+
+            <p class="light">Encouraging other companies through accelerator and incubation programs expedites progress.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h4 class="header col s12 light gray-text text-darken-4">A modern take on redesigning our food system</h4>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><%= image_tag 'page1-background.jpg' %></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send amber-text text-darken-2"></i></h3>
+          <h4>Contact Us</h4>
+          <div class="contacts-form">
+            <%= render 'contacts/form' %>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h4 class="header col s12 light gray-text text-darken-4">Innovating a better relationship to our food</h4>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><%= image_tag 'farmfields.jpg' %></div>
+  </div>
+
+  <footer class="page-footer green">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">
+            We are a group of people looking to shape the world by cultivating innovation in the food sector.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Grown and watered by Simia, Inc.
+      </div>
+    </div>
+  </footer>
