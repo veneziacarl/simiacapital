@@ -9,30 +9,26 @@
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 
   <body>
-    <div data-sticky-container>
-      <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%">
-        <div class="top-bar-title">
-          <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-            <span class="menu-icon dark" data-toggle></span>
-          </span>
-          <strong>Simia Capital</strong>
-        </div>
-        <div id="responsive-menu">
-          <div class="top-bar-left">
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="top-bar-right">
-          </div>
-        </div>
+
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Simia Capital</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
-    </div>
+    </nav>
 
     <%= yield %>
 

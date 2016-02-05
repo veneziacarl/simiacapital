@@ -1,67 +1,87 @@
-#home {
-  background: url(page1-background.jpg) 50% 0 repeat fixed; min-height: 1000px;
-  height: 1000px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  position: relative;
+$gray: #eaeaea;
+$light-blue: #c0d6df;
+$blue-gray: #4f6d7a;
+$tan: #e8dab2;
+$orange: #dd6e42;
+$white: #ffffff;
+$black: #000000;
 
-  article {
-    height: 458px;
+a#logo-container.brand-logo {
+  font-family: 'Kaushan Script', cursive;
+  color: $black;
+}
+
+ul.right a {
+  color: $black;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
     position: absolute;
-    text-align: center;
-    top: 150px;
-    width: 100%;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
   }
 }
 
-#about {
-  background: url(Depositphotos_5239031_l-2015.jpg) 50% 0 repeat fixed; min-height: 1000px;
-  height: 1000px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  position: relative;
-  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
-
-  article {
-    height: 458px;
-    position: absolute; 
-    text-align: center;
-    top: 150px;
-    width: 100%;
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
   }
 }
 
-#page3 {
-  height: 1000px;
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
 }
 
-.top-bar {
-  background-color: #E9E9E9;
-  border-radius: 2px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-  font-family: Roboto, sans-serif;
-  height: 50px;
+footer.page-footer {
+  margin: 0;
+}
 
-  ul {
-    background-color: inherit;
-  }
+::-webkit-input-placeholder {
+   text-align: center;
+}
 
-  .top-bar-left {
-    float: left;
-    margin-left: 50px;
-    padding-top: 7px;
-    li {
-      display: inline;
-      list-style: none;
-      margin-left: 20px;
-    }
-  }
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+}
 
-  .top-bar-title {
-    float: left;
-    padding-top: 7px;
-  }
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   text-align: center;
+}
+
+.contact-submit {
+  background: #FFA000;
+  border: 1px solid #FFA000;
 }
