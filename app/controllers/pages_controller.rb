@@ -1,4 +1,3 @@
-require 'pry'
 require 'rss'
 
 class PagesController < ApplicationController
@@ -9,6 +8,6 @@ class PagesController < ApplicationController
   end
 
   def portal
-    @articles = Aggregator.generate_articles
+    @news = Aggregator.generate_news
   end
 end
