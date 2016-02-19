@@ -1,1 +1,8 @@
 this is the portal page
+
+<ul>
+  <% @articles.each_with_index do |article, index| %>
+    <li class="article-number">Article <%= index + 1 %>:</li>
+    <li class="article-title"><%= link_to article[:title], article[:link], :target => '_blank' %></li>
+  <% end %>
+</ul>
