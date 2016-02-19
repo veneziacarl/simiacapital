@@ -1,0 +1,19 @@
+<nav class="white" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="#" class="brand-logo">Simia Capital</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#about">About</a></li>
+      <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+      <li><a href="#contact">Contact</a></li>
+      <li><%= link_to 'Portal', portal_path %></li>
+      <% if user_signed_in? %>
+        <li><%= link_to 'Log Out', destroy_user_session_path, :method => 'delete' %></li>
+      <% end %>
+    </ul>
+
+    <ul id="nav-mobile" class="side-nav">
+      <li><a href="#">Navbar</a></li>
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+  </div>
+</nav>
