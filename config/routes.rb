@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   root 'pages#index'
 
-  resources :pages
+  devise_for :users
 
-  match '/contacts', to: 'contacts#new', via: 'get'
+  resources :pages
+  match '/portal', to: 'pages#portal', via: 'get'
+
   resources :contacts, only: [:new, :create]
+  match '/contacts', to: 'contacts#new', via: 'get'
 end
