@@ -5,8 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   def self.send_news(news)
-    User.all.each do |user|
-      
-    end
+    users = User.all
+    NewsMailer.daily_news(news, users)
   end
 end
