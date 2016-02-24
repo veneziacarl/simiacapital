@@ -1,3 +1,5 @@
+require 'rss'
+
 class Aggregator
   SITES = [
     { name: "Invest In Cannabis", link: "http://www.investincannabis.com/feed/", description: "", articles: [] },
