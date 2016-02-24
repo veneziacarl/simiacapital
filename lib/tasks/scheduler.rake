@@ -1,10 +1,9 @@
 desc "This task is called by the Heroku scheduler add-on"
-task :update_feed => :environment do
+task :send_news => :environment do
   puts "Updating feed..."
   news = Aggregator.new.generate_news
-  puts "done."
-end
-
-task :send_news => :environment do
+  puts "Completed feed update."
+  puts "Devilering daily news..."
   User.send_news(news)
+  puts "Completed email delivery."
 end
