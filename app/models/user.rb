@@ -4,8 +4,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  def self.send_news(news)
-    users = User.all
-    NewsMailer.daily_news(news, users)
+  def self.send_news(user)
+    @user = user
+    NewsMailer.daily_news(@user).deliver
   end
 end
