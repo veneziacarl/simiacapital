@@ -8,6 +8,6 @@ class PagesController < ApplicationController
   end
 
   def portal
-    @news = Aggregator.generate_news
+    @news = Aggregator.new.generate_news
   end
 end
