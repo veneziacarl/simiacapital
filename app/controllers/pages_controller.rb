@@ -1,7 +1,7 @@
 require 'rss'
 
 class PagesController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: [:index]
 
   def index
     @contact = Contact.new
