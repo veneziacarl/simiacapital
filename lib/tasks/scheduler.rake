@@ -4,7 +4,7 @@ task :send_news => :environment do
   # news = Aggregator.new.generate_news
   puts "Completed feed update."
   puts "Devilering daily news..."
-  user = User.all[1]
+  user = User.first
   User.send_news(user)
   puts "Completed email delivery to #{user.email}."
 end
