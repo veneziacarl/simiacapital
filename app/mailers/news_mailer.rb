@@ -5,6 +5,6 @@ class NewsMailer < ActionMailer::Base
     puts "Generating news feed..."
     @news = Aggregator.new.generate_news
     puts "Completed aggregation."
-    mail(to: users, subject: "Daily Cannabis News!")
+    mail(to: "simiacapital@gmail.com", subject: "Daily Cannabis News!", bcc: users)
   end
 end
