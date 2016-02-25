@@ -21,8 +21,6 @@ class Aggregator
     { name: "Marijuana", link: "http://www.marijuana.com/feed/", description: "", articles: [] }
   ]
 
-
-
   def generate_news
     news = []
     SITES.each_with_index do |site, index|
