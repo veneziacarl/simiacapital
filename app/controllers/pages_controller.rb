@@ -12,8 +12,7 @@ class PagesController < ApplicationController
 
   def subscribe
     @user = User.find(current_user)
-    @user.daily_news = true
-    if @user.save
+    if @user.update(daily_news: true)
       flash[:notice] = "Successfully subscribed to daily news"
       redirect_to portal_path
     else
@@ -24,8 +23,7 @@ class PagesController < ApplicationController
 
   def unsubscribe
     @user = User.find(current_user)
-    @user.daily_news = false
-    if @user.save
+    if @user.update(daily_news: false)
       flash[:notice] = "Successfully unsubscribed from daily news"
       redirect_to portal_path
     else
