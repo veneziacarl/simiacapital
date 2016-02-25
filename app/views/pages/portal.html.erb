@@ -1,18 +1,33 @@
-<div class="news-header center">
-  <h1>Today's Cannabis News</h1>
+<div class="announce-box center container">
+  <h1 class="center green-text">Investor Portal</h1>
+  <h5 class="announce-message center">
+    We are developing a suite of tools to
+    facilitate engagement in the cannabis industry.
+  </h5>
+  <p>More tools coming soon!</p>
 </div>
 
-<div class="all-news green-text container">
-  <% @news.each do |site| %>
-    <div class="container">
-      <ul class="news-articles collection with-header">
-        <li class="collection-header"><h3><%= site[:name] %></h3></li>
-        <% site[:articles].each_with_index do |article, index| %>
-          <li class="collection-item">
-            <%= index + 1 %>. <%= link_to article[:title], article[:link], :target => '_blank' %>
-          </li>
-        <% end %>
-      </ul>
-    </div>
+<hr />
+<div class="news-subscription center container">
+  <h5 class="green-text">
+    Our news aggregator crawls the web to provide the best available cannabis business content each day.
+    You are sent just <i>one</i> email a day (currently at 6:30pm EST).
+  </h5>
+  <p class="center">You are currently</p>
+  <% if current_user.daily_news %>
+    <p class="sub-notice amber-text text-darken-2">Receiving daily news emails</p>
+    <%= button_to 'UnSubscribe from our Newsletter', unsubscribe_path, class: 'btn waves-effect waves-light amber darken-2', method: 'post' %>
+  <% else %>
+    <p class="sub-notice amber-text text-darken-2">Not receiving daily news emails</p>
+    <%= link_to 'Subscribe to our Newsletter', subscribe_path, class: 'btn waves-effect waves-light amber darken-2', method: 'post' %>
   <% end %>
+</div>
+<hr />
+
+<div class="news-archives container">
+  <h5>News Archives:</h5>
+  <ul>
+    <li>coming soon</li>
+    <li>coming soon</li>
+  </ul>
 </div>
