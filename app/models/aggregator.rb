@@ -48,7 +48,7 @@ class Aggregator
           elsif item.date >= today
             news[index][:articles] << { title: item.title, description: item.description, link: item.link }
           end
-        elsif item.date >= today && item.date != nil
+        elsif item.date >= today
           news[index][:articles] << { title: item.title, description: item.description, link: item.link }
         end
       end
